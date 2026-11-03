@@ -1,0 +1,28 @@
+---
+layout: runbook
+title: '#4471 is more than one cause'
+owner: Arkadiusz Nieckarz
+status: open
+reviewed: 2026-11-03
+signature: Arkadiusz Nieckarz
+---
+
+<script>
+  import CauseTable from '#lib/kb/CauseTable.svelte';
+  import RenderStamp from '#lib/kb/RenderStamp.svelte';
+  const signature = 'Arkadiusz Nieckarz';
+</script>
+
+#4471 merged every date report into one known issue. The cause is not the subject line. It follows the tenant: whether that locale writes the day first, and which booking form they run.
+
+Two causes are in this ticket.
+
+**parser.** The shared parser reads every date month first. A day-first tenant's dates come out flipped. That is the cause #4471 was filed as.
+
+**hint.** On booking-v3 the form prints `MM/DD/YYYY`, and the form reads the date the tenant's way, day first. People type what the hint tells them. That is a different bug, and it has no ticket of its own.
+
+Reports the desk read as a one-day move stay in the cause their tenant files them under. The table footnotes those.
+
+<CauseTable ticket={4471} />
+
+<RenderStamp {signature} />
