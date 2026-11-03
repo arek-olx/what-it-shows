@@ -4,13 +4,13 @@ title: '#4471 is more than one cause'
 owner: Arkadiusz Nieckarz
 status: open
 reviewed: 2026-11-03
-signature: Arkadiusz Nieckarz
+signature: "v1.eyJzdWIiOiIzOTc3IiwiYXVkIjoiY2hhbGxlbmdlOndoYXQtaXQtc2hvd3MiLCJpYXQiOjE3OTM3MjYyMjIsImV4cCI6MTc5MzgxMjYyMn0.CaLzIKZGOoOE7RT50i3-U4RdJbzUODTFqmY2WRBCW8Y"
 ---
 
 <script>
   import CauseTable from '#lib/kb/CauseTable.svelte';
   import RenderStamp from '#lib/kb/RenderStamp.svelte';
-  const signature = 'Arkadiusz Nieckarz';
+  const signature = 'v1.eyJzdWIiOiIzOTc3IiwiYXVkIjoiY2hhbGxlbmdlOndoYXQtaXQtc2hvd3MiLCJpYXQiOjE3OTM3MjYyMjIsImV4cCI6MTc5MzgxMjYyMn0.CaLzIKZGOoOE7RT50i3-U4RdJbzUODTFqmY2WRBCW8Y';
 </script>
 
 #4471 merged every date report into one known issue. The cause is not the subject line. It follows the tenant: whether that locale writes the day first, and which booking form they run.
